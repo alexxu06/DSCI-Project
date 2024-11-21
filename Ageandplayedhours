@@ -3,8 +3,6 @@
   library(tidymodels),
   library(gridExtra),
   set.seed(2),
-
-"source": [
   {
     "url_1<-"https://drive.google.com/uc?export=download&id=14O91N5OlVkvdGxXNJUj5jIsV5RexhzbB"
     "sessions_data<-read_csv(url_1)"
@@ -17,5 +15,4 @@
     "players_new_data<-players_data|>
       select(age,played_hours)"
     }
-  ]
 }
