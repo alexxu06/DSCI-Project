@@ -1,0 +1,15 @@
+library(tidyverse)
+library(tidymodels)
+library(gridExtra)
+set.seed(2)
+
+url_1<-"https://drive.google.com/uc?export=download&id=14O91N5OlVkvdGxXNJUj5jIsV5RexhzbB"
+sessions_data<-read_csv(url_1)
+sessions_data
+
+url_2<-"https://drive.google.com/uc?export=download&id=1Mw9vW0hjTJwRWx0bDXiSpYsO3gKogaPz"
+players_data<-read_csv(url_2)
+players_data
+
+players_new_data<-players_data|>
+                  select(age,played_hours)
